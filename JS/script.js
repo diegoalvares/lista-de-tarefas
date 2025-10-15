@@ -20,10 +20,13 @@ adc.addEventListener('click', function adicionar(e){
     const titulo_card2 = document.createElement("h4");
     const pg_card = document.createElement("p");
 
+    //---------------------------------------------//
 
     titulo_card.innerText= nome_tarefa.value;
     titulo_card2.innerText='Descrição da Tarefa';
     pg_card.innerText=descricao.value;
+
+    //---------------------------------------------//
 
     document.body.appendChild(card);
     card.appendChild(titulo_card);
@@ -31,6 +34,7 @@ adc.addEventListener('click', function adicionar(e){
     card.appendChild(titulo_card2);
     card.appendChild(pg_card);
     rodape.parentNode.insertBefore(card, rodape);
+
     formulario.style.display='none';
 })
 
