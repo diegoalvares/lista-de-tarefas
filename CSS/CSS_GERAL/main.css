@@ -1,0 +1,31 @@
+#btn_tarefa{
+    background-color: white;
+    color: var(--roxo3);
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 8px;
+    border: solid 4px var(--roxo4);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 10px;
+    transition-duration: 0.5s;
+}
+
+#btn_tarefa:hover{
+    background-color: var(--roxo4);
+    color: white;
+}
+
+#nova_tarefa{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#nova{
+    margin-left: 10px;
+    font-size: 20px;
+    color: var(--roxo3);
+    font-weight: 600;
+}

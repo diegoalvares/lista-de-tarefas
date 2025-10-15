@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!------------------------CSS GERAL------------------------>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/efeitos.css">
+    <!------------------------CSS GERAL------------------------>
+    <link rel="stylesheet" href="CSS/CSS_GERAL/reset.css">
+    <link rel="stylesheet" href="CSS/CSS_GERAL/header.css">
+    <link rel="stylesheet" href="CSS/CSS_GERAL/main.css">
+    <link rel="stylesheet" href="CSS/CSS_GERAL/footer.css">
+    <link rel="stylesheet" href="CSS/CSS_GERAL/efeitos.css">
     <!-------------------------------------------------------->
 
     <!-----------------------CSS RESOLUÇÕES------------------->
@@ -28,11 +28,23 @@
     </header>
 
     <main>
+        <button type="button" id="btn_tarefa"><span id="nova">+</span> <span id="nova_tarefa">Nova Tarefa</span></button>
 
+        <div id="container">
+            <h2>Adicionar nova tarefa:</h2>
+            <form>
+                <input type="text" placeholder="Nome da Tarefa">
+                <textarea id="descricao" placeholder="Descrição da tarefa..."></textarea>
+                <div id="botoes">
+                    <button type="submit">Adicionar</button>
+                    <button type="button">Cancelar</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
-
+        <p>Site criado por Diego Alvares de Macedo&copy;.</p>
     </footer>
 </body>
 </html>
