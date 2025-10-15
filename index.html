@@ -14,7 +14,7 @@
 
     <!-----------------------CSS RESOLUÇÕES------------------->
     <link rel="stylesheet" href="CSS/RESOLUCOES/1024x768.css">
-    <link rel="stylesheet" href="CSS/RESOLUCOES/1280×720.css">
+    <link rel="stylesheet" href="CSS/RESOLUCOES/1280x720.css">
     <link rel="stylesheet" href="CSS/RESOLUCOES/1366x768.css">
     <link rel="stylesheet" href="CSS/RESOLUCOES/1600x900.css">
     <link rel="stylesheet" href="CSS/RESOLUCOES/1920x1080.css">
@@ -29,16 +29,13 @@
 
     <main>
         <button type="button" id="btn_tarefa"><span id="nova">+</span> <span id="nova_tarefa">Nova Tarefa</span></button>
-
-        <div id="container">
+        <form>
             <h2>Adicionar nova tarefa:</h2>
-            <form>
-                <input type="text" placeholder="Nome da Tarefa">
-                <textarea id="descricao" placeholder="Descrição da tarefa..."></textarea><br>
-                <button type="submit">Adicionar</button>
-                <button type="button">Cancelar</button>
-            </form>
-        </div>
+            <input type="text" placeholder="Nome da Tarefa"><br>
+            <textarea id="descricao" placeholder="Descrição da tarefa..."></textarea><br>
+            <button type="submit" id="adc">Adicionar</button>
+            <button type="button" id="cnc">Cancelar</button>
+        </form>
     </main>
 
     <footer>

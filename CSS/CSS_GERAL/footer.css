@@ -1,0 +1,14 @@
+footer{
+    background-color: aliceblue;
+    margin-top: 75vh;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    text-shadow: none;
+    width: 100vw;
+    margin-left: -8px;
+}
+
+footer>p{
+    padding: 7px;
+}
