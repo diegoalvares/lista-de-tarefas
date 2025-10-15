@@ -9,6 +9,8 @@ rodape = document.getElementById('rodape');
 
 ntrf.addEventListener('click', function novatarefa(){
     formulario.style.display = 'block';
+    nome_tarefa.value='';
+    descricao.value='';
 })
 
 adc.addEventListener('click', function adicionar(e){
