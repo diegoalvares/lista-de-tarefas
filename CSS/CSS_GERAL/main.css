@@ -6,15 +6,17 @@
     font-weight: 600;
     padding: 10px;
     padding-bottom: 8px;
-    border: solid 4px var(--roxo4);
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    border: solid 4px var(--roxo3);
+    box-shadow: 0px 0px 20px rgb(43, 43, 43);
     margin-top: 20px;
     margin-left: 10px;
     transition-duration: 0.5s;
     position: relative;
+
 }
 
 #btn_tarefa:hover{
+    border: solid 4px white;
     background-color: var(--roxo4);
     color: white;
 }
@@ -22,12 +24,12 @@
 #nova_tarefa{
     font-size: 20px;
     margin-right: 20px;
+    text-shadow: 0px 0px 1px rgb(61, 61, 61);
 }
 
 #nova{
     margin-left: 10px;
     font-size: 20px;
-    color: var(--roxo3);
     font-weight: 600;
 }
 
@@ -36,13 +38,15 @@ form{
     margin-top: 20px;
     margin-left: 18px; 
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(7, 7, 7, 0.9);
     width: 320px;
     padding: 5px 20px 40px;
     position: absolute;
     text-align: center;
     border-radius: 30px;
     box-shadow: 0px 0px 20px white;
+    border: solid 1px var(--roxo4);
+    text-shadow: 0px 0px 1px rgb(61, 61, 61);
 }
 
 form>input{
@@ -74,6 +78,7 @@ textarea::placeholder, input::placeholder{
     color: white;
     padding: 10px 20px;
     cursor: pointer;
+    text-shadow: 0px 0px 1px rgb(61, 61, 61);
 }
 
 #cnc{
@@ -83,4 +88,34 @@ textarea::placeholder, input::placeholder{
     color: white;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.card{
+    background-color: aliceblue;
+    text-align: justify;
+    color: var(--roxo2);
+    text-shadow: none;
+    font-size: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--roxo4);
+    text-shadow: 0px 0px 1px rgb(104, 104, 104);
+}
+
+.card>h3{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.card>h4{
+    text-align: center;
+    font-size: 18px;
+}
+
+.card>p{
+    text-align: justify;
+}
+
+.card>p{
+    padding: 0px 15px 20px 15px;
 }
