@@ -74,23 +74,25 @@ textarea::placeholder, input::placeholder{
 #adc{
     font-size: 20px;
     border-radius: 10px;
-    background-color: green;
+    font-weight: 600;
+    background-color: rgb(17, 100, 17);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     cursor: pointer;
     text-shadow: 0px 0px 1px rgb(61, 61, 61);
 }
 
 #cnc{
     font-size: 20px;
+    font-weight: 600;
     border-radius: 10px;
-    background-color: rgb(128, 0, 0);
+    background-color: rgb(168, 30, 30);
     color: white;
     padding: 10px 20px;
     cursor: pointer;
 }
 
-.card{
+.card, .card2{
     background-color: aliceblue;
     text-align: justify;
     color: var(--roxo2);
@@ -118,4 +120,37 @@ textarea::placeholder, input::placeholder{
 
 .card>p{
     padding: 0px 15px 20px 15px;
+}
+
+.card2>h3{
+    text-align: center;
+    padding: 15px;
+}
+
+.apagar{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(168, 30, 30);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 16px;
+    width: 150px;
+    height: 55px;
+}
+
+.concluir{
+    background-color: rgb(17, 100, 17);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 55px;
 }
