@@ -7,9 +7,14 @@ cnc2 = document.getElementById('cnc2');
 nome_tarefa = document.getElementById('nome_tarefa');
 nome_tarefa2 = document.getElementById('nome_tarefa2');
 descricao = document.getElementById('descricao');
+descricao2 = document.getElementById('descricao2');
 rodape = document.getElementById('rodape');
 adc_nova = document.getElementById('adc_nova');
 alt = document.getElementById('alt');
+let titulo_em_ed = null
+let desc_em_ed = null
+let titulo_desc = null
+let linha_desc = null
     //---------------------------------------------//
 
 ntrf.addEventListener('click', function novatarefa(){
@@ -29,16 +34,16 @@ adc.addEventListener('click', function adicionar(e){
     const titulo_card2 = document.createElement("h4");
     const pg_card = document.createElement("p");
 
-    titulo_card.innerText= nome_tarefa.value;
-    titulo_card2.innerText='Descrição da Tarefa';
-    pg_card.innerText=descricao.value;
+    titulo_card.textContent= nome_tarefa.value;
+    titulo_card2.innerText='Descrição da Tarefa:';
+    pg_card.textContent=descricao.value;
 
     //---------------------------------------------//
     const concluir = document.createElement('button');
     concluir.innerText= 'Concluir';
     concluir.classList.add('concluir');
     
-    concluir.addEventListener('click', function novatarefa(){
+    concluir.addEventListener('click', function(){
         alert('Parabéns por concluir a tarefa!');
         card.remove();
     })
@@ -47,13 +52,14 @@ adc.addEventListener('click', function adicionar(e){
     editar.innerText= 'Editar'
     editar.classList.add('editar');
     
-    editar.addEventListener('click', function novatarefa(){
+    editar.addEventListener('click', function (){
         form_edit.style.display = 'block';
-    })
-
-    alt.addEventListener('click', function editar(){
-        titulo_card.innerText = nome_tarefa2.value
-        form_edit.style.display = 'none';
+        nome_tarefa2.value = titulo_card.textContent;
+        descricao2.value = pg_card.textContent;
+        titulo_em_ed = titulo_card;
+        titulo_desc = titulo_card2;
+        linha_desc = linha;
+        desc_em_ed = pg_card;
     })
 
 
@@ -61,7 +67,7 @@ adc.addEventListener('click', function adicionar(e){
     apagar.innerText= 'Deletar'
     apagar.classList.add('apagar');
 
-    apagar.addEventListener('click', function novatarefa(){
+    apagar.addEventListener('click', function (){
     alert('Tarefa deletada!')
         card.remove();
     })
@@ -71,7 +77,7 @@ adc.addEventListener('click', function adicionar(e){
 
     //---------------------------------------------//
 
-    if (nome_tarefa.value == ''){
+    if (nome_tarefa.value == '' || nome_tarefa.value == '' && descricao.value != ''){
         alert('Coloque ao menos o nome da tarefa.')
     }
 
@@ -86,7 +92,7 @@ adc.addEventListener('click', function adicionar(e){
         formulario.style.display='none';
     }
 
-    else if (nome_tarefa.value != ''){
+    else if (nome_tarefa.value != '' && descricao.value != ''){
         document.body.appendChild(card);
         card.classList.add('card');
         card.appendChild(titulo_card);
@@ -105,6 +111,38 @@ adc.addEventListener('click', function adicionar(e){
 //---------------------------------------------//
 
 
+alt.addEventListener('click', function () {
+
+    if (nome_tarefa2.value == '' || nome_tarefa2.value == '' && descricao2.value !== ''){
+        alert('Coloque ao menos o nome da tarefa.')
+    }
+
+    else if (nome_tarefa2.value !== '' && descricao2.value == '') {
+        titulo_em_ed.textContent = nome_tarefa2.value;
+        titulo_desc.style.display='none';
+        linha_desc.style.display='none';
+        desc_em_ed.textContent = descricao2.value;
+        form_edit.style.display = 'none';
+        titulo_em_ed = null;
+        titulo_desc=null;
+        linha_desc = null;
+    }
+
+    else if (nome_tarefa2.value != '' && descricao2.value != '') {
+        titulo_em_ed.textContent = nome_tarefa2.value;
+        titulo_desc.style.display='block';
+        linha_desc.style.display='block';
+        desc_em_ed.textContent = descricao2.value;
+        form_edit.style.display = 'none';
+        titulo_em_ed = null;
+        titulo_desc=null;
+        linha_desc = null;
+    }
+
+
+
+});
+
 
 cnc.addEventListener('click', function cancelar(){
     formulario.style.display = 'none';
@@ -113,3 +151,4 @@ cnc.addEventListener('click', function cancelar(){
 cnc2.addEventListener('click', function cancelar(){
     form_edit.style.display = 'none';
 })
+
