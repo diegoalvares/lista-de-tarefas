@@ -52,7 +52,8 @@ adc.addEventListener('click', function adicionar(e){
     editar.innerText= 'Editar'
     editar.classList.add('editar');
     
-    editar.addEventListener('click', function (){
+    editar.addEventListener('click', function (e){
+        e.preventDefault();
         form_edit.style.display = 'block';
         nome_tarefa2.value = titulo_card.textContent;
         descricao2.value = pg_card.textContent;
@@ -83,8 +84,14 @@ adc.addEventListener('click', function adicionar(e){
 
     else if (nome_tarefa.value != '' && descricao.value == ''){
         document.body.appendChild(card);
-        card.classList.add('card2');
+        card.classList.add('card');
         card.appendChild(titulo_card);
+        card.appendChild(linha);
+        card.appendChild(titulo_card2);
+        card.appendChild(pg_card);
+        linha.style.display = 'none';
+        titulo_card2.style.display = 'none';
+        pg_card.style.display = 'none';
         card.appendChild(concluir);
         card.appendChild(editar);
         card.appendChild(apagar);
@@ -111,16 +118,18 @@ adc.addEventListener('click', function adicionar(e){
 //---------------------------------------------//
 
 
-alt.addEventListener('click', function () {
+alt.addEventListener('click', function (e) {
 
     if (nome_tarefa2.value == '' || nome_tarefa2.value == '' && descricao2.value !== ''){
         alert('Coloque ao menos o nome da tarefa.')
     }
 
     else if (nome_tarefa2.value !== '' && descricao2.value == '') {
+        e.preventDefault();
         titulo_em_ed.textContent = nome_tarefa2.value;
-        titulo_desc.style.display='none';
         linha_desc.style.display='none';
+        titulo_desc.style.display='none';
+        desc_em_ed.style.display = 'none';
         desc_em_ed.textContent = descricao2.value;
         form_edit.style.display = 'none';
         titulo_em_ed = null;
@@ -129,18 +138,23 @@ alt.addEventListener('click', function () {
     }
 
     else if (nome_tarefa2.value != '' && descricao2.value != '') {
+        e.preventDefault();
         titulo_em_ed.textContent = nome_tarefa2.value;
-        titulo_desc.style.display='block';
         linha_desc.style.display='block';
+        titulo_desc.style.display='block';
+        desc_em_ed.style.display = 'block';
         desc_em_ed.textContent = descricao2.value;
+
+        if (titulo_em_ed.parentNode.classList.contains('card2')) {
+            titulo_em_ed.parentNode.classList.remove('card2');
+            titulo_em_ed.parentNode.classList.add('card');
+        }
+
         form_edit.style.display = 'none';
         titulo_em_ed = null;
         titulo_desc=null;
         linha_desc = null;
     }
-
-
-
 });
 
 
