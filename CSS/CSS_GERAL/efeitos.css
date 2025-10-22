@@ -1,0 +1,11 @@
+.card{
+    animation: aparecer 0.5s steps(60);
+}
+
+
+@keyframes aparecer {
+    0%, 20%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
