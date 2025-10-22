@@ -45,7 +45,7 @@ adc.addEventListener('click', function adicionar(e){
     
     concluir.addEventListener('click', function(){
         if (confirm('Concluir a tarefa?')){
-           alert('Parabéns por concluir a tarefa!');
+            alert('Parabéns por concluir a tarefa!');
             card.remove(); 
         }
     })

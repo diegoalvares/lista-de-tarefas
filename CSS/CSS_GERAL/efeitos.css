@@ -2,7 +2,6 @@
     animation: aparecer 0.5s steps(60);
 }
 
-
 @keyframes aparecer {
     0%, 20%{
         opacity: 0;
