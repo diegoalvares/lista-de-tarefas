@@ -44,8 +44,10 @@ adc.addEventListener('click', function adicionar(e){
     concluir.classList.add('concluir');
     
     concluir.addEventListener('click', function(){
-        alert('Parabéns por concluir a tarefa!');
-        card.remove();
+        if (confirm('Concluir a tarefa?')){
+           alert('Parabéns por concluir a tarefa!');
+            card.remove(); 
+        }
     })
 
     const editar = document.createElement('button');
@@ -69,8 +71,9 @@ adc.addEventListener('click', function adicionar(e){
     apagar.classList.add('apagar');
 
     apagar.addEventListener('click', function (){
-    alert('Tarefa deletada!')
-        card.remove();
+        if (confirm('Deletar a tarefa?')){
+            alert('Tarefa deletada!');
+                card.remove();} 
     })
 
     
