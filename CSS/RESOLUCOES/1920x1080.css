@@ -32,4 +32,8 @@
     .card>h4{
         font-size: 25px;
     }
+
+    footer{
+        margin-top: 76vh;
+    }
 }

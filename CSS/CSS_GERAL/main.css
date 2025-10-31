@@ -81,6 +81,7 @@ textarea::placeholder, input::placeholder{
     padding: 10px 15px;
     cursor: pointer;
     text-shadow: 0px 0px 1px rgb(61, 61, 61);
+    transition: 0.5s;
 }
 
 #alt{
@@ -95,6 +96,11 @@ textarea::placeholder, input::placeholder{
     color: white;
     padding: 10px 20px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+#adc:hover, #alt:hover, #cnc:hover, #cnc2:hover{
+    opacity: 0.8;
 }
 
 .card, .card2{
@@ -144,6 +150,7 @@ textarea::placeholder, input::placeholder{
     margin-left: 8.5px;
     width: 100px;
     height: 55px;
+    transition: 0.5s;
 }
 
 .concluir{
@@ -158,6 +165,7 @@ textarea::placeholder, input::placeholder{
     margin-left: 8.5px;
     width: 100px;
     height: 55px;
+    transition: 0.5s;
 }
 
 .editar{
@@ -172,4 +180,8 @@ textarea::placeholder, input::placeholder{
     margin-left: 8.5px;
     width: 100px;
     height: 55px;
+}
+
+.apagar:hover, .concluir:hover, .editar:hover{
+    opacity: 0.8;
 }
