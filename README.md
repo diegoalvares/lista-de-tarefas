@@ -4,7 +4,6 @@ Site de lista de tarefas onde as tarefas adicionadoas ficaram salvas em seu nave
 
 Resoluções aplicadas ao porjeto:
 
-- 360x800 (mobile);
 - 412x914 (mobile);
 - XGA (1024x768);
 - HD (1280×720);
