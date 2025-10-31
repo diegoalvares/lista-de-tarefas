@@ -1,0 +1,26 @@
+@media screen and (min-width: 1280px){   
+    #btn_tarefa{
+        margin-left: 510px;
+    }
+
+    #formulario, #form_edit{
+        font-size: 25px;
+        margin-left: 380px;
+        margin-top: 10px;
+        width: 450px;
+    }
+
+    .card{
+        width: 600px;
+        font-size: 25px;
+        margin-left: 330px;
+    }
+
+    #alt, #cnc2{
+        width: 135px;
+    }
+
+    footer{
+        margin-top: 70.5vh;
+    }
+}

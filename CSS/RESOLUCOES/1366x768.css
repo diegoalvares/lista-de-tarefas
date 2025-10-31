@@ -1,0 +1,22 @@
+@media screen and (min-width: 1280px){   
+    #btn_tarefa{
+        margin-left: 550px;
+    }
+
+    #formulario, #form_edit{
+        font-size: 25px;
+        margin-left: 420px;
+        margin-top: 10px;
+        width: 450px;
+    }
+
+    .card{
+        width: 600px;
+        font-size: 25px;
+        margin-left: 370px;
+    }
+
+    footer{
+        margin-top: 72.3vh;
+    }
+}

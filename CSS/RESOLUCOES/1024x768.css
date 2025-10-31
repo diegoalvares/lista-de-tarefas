@@ -12,13 +12,13 @@
         font-size: 30px;
     }
 
-    #formulario{
+    #formulario, #form_edit{
         font-size: 25px;
         margin-left: 280px;
         width: 450px;
     }
 
-    #formulario>input, form>#descricao{
+    #formulario>input, #form_edit>input, #formulario>#descricao, #form_edit>#descricao2{
         font-size: 25px;
         width: 350px;
     }
@@ -35,5 +35,19 @@
 
     .concluir{
         margin-left: 150px;
+    }
+
+    .card>p{
+        padding: 0px 35px 40px 35px;
+    }
+
+    #alt, #cnc2{
+        width: 129px;
+    }
+
+    footer{
+        font-size: 20px;
+        margin-top: 72.3vh;
+        margin-bottom: -35px;
     }
 }
